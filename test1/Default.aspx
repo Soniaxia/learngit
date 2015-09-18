@@ -17,7 +17,7 @@
         <asp:LinkButton ID="LinkButton2" runat="server" onclick="LinkButton2_Click" 
             style="z-index: 1; left: 99px; top: 133px; position: absolute; margin-top: 0px">教师</asp:LinkButton>
         <asp:LinkButton ID="LinkButton3" runat="server" onclick="LinkButton3_Click" 
-            style="z-index: 1; left: 98px; top: 201px; position: absolute; height: 16px; margin-top: 0px">学生</asp:LinkButton>
+            style="z-index: 1; left: 98px; top: 201px; position: absolute; height: 16px; margin-top: 0px">学生1</asp:LinkButton>
     </div>
     </form>
 </body>
