@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="height: 444px">
+
+    <form id="form1" runat="server">
+    <div style="z-index: 1; left: 10px; top: 15px; position: absolute; height: 125px; width: 716px">
+        <asp:Image ID="Image1" runat="server" Height="119px" 
+            ImageUrl="~/image/13-055936_749.jpg" Width="706px" />
+    </div>
+    <div style="z-index: 1; left: 18px; top: 149px; position: absolute; height: 233px; width: 151px">
+        <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click" 
+            style="z-index: 1; left: 25px; top: 34px; position: absolute">管理员</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton2" runat="server" onclick="LinkButton2_Click" 
+            style="z-index: 1; left: 27px; top: 76px; position: absolute">教师</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton3" runat="server" onclick="LinkButton3_Click" 
+            style="z-index: 1; left: 29px; top: 121px; position: absolute">学生</asp:LinkButton>
+    </div>
+    <div style="width: 536px; height: 232px; z-index: 1; left: 182px; top: 147px; position: absolute">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <p style="height: 231px">
+            </p>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+</body>
+</html>
