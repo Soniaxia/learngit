@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="student.master.cs" Inherits="student" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+
+    <style type="text/css">
+        #full
+        {
+            height: 478px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 200px; z-index: 1; left: 100px; top: 0px; position: absolute; width: 1000px;">
+            <div style="z-index: 1; left: 0px; top: 200px; position: absolute; height: 396px; width: 200px">
+                <table style="width: 100%; height: 395px; z-index: 1; left: 0px; top: 0px; position: absolute; background-color: #99FFCC;">
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton6" runat="server" onclick="LinkButton6_Click1">学生主页</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">水电费查询</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton2" runat="server" onclick="LinkButton2_Click">水电费缴纳</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton3" runat="server" onclick="LinkButton3_Click">报修登记</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton4" runat="server" onclick="LinkButton4_Click">报修处理结果查询</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton5" runat="server" onclick="LinkButton5_Click">返回首页</asp:LinkButton>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div align="center" 
+                
+                style="z-index: 1; left: 1px; top: 608px; position: absolute; height: 20px; width: 1000px">
+                <asp:Label ID="Label1" runat="server" style="font-weight: 700; color: #000000;" 
+                    Text="成都信息工程大学宿舍10栋 版权"></asp:Label>
+            </div>
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/image/3.jpg" 
+                
+                style="z-index: 1; left: 0px; top: 0px; position: absolute; width: 1000px; height: 200px; background-color: #FFFFFF;" />
+            <div style="z-index: 1; left: 204px; top: 203px; position: absolute; height: 391px; width: 800px">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    
+                </asp:ContentPlaceHolder>&nbsp;</div>
+        </div>
+
+    </form>
+</body>
+</html>

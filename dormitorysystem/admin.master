@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            background-color: #CCCCFF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div style="height: 200px; z-index: 1; left: 100px; top: 0px; position: absolute; width: 1000px;">
+            <div style="z-index: 1; left: 0px; top: 200px; position: absolute; height: 400px; width: 200px">
+                <table style="width: 100%; height: 395px; z-index: 1; left: 0px; top: 0px; position: absolute;">
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click" 
+                                style="font-family: 华文行楷; color: #800000; font-size: large">管理员主页</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton2" runat="server" onclick="LinkButton2_Click" 
+                                style="font-family: 华文行楷; color: #800000; font-size: large">寝室管理</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton3" runat="server" onclick="LinkButton3_Click" 
+                                style="font-size: large; font-family: 华文行楷; color: #800000">学生管理</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton4" runat="server" onclick="LinkButton4_Click" 
+                                style="font-size: large; font-family: 华文行楷; color: #800000">寝室入住管理</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton5" runat="server" onclick="LinkButton5_Click" 
+                                style="font-family: 华文行楷; font-size: large; color: #800000">寝室水电费登记</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton6" runat="server" onclick="LinkButton6_Click" 
+                                style="font-size: large; font-family: 华文行楷; color: #800000">寝室水电费统计</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton7" runat="server" onclick="LinkButton7_Click" 
+                                style="font-size: large; font-family: 华文行楷; color: #800000">报修处理</asp:LinkButton>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="style1">
+                            <asp:LinkButton ID="LinkButton8" runat="server" onclick="LinkButton8_Click" 
+                                style="font-size: large; font-family: 华文行楷; color: #800000">返回首页</asp:LinkButton>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div align="center" 
+                style="z-index: 1; left: 0px; top: 600px; position: absolute; height: 20px; width: 1000px">
+                <asp:Label ID="Label1" runat="server" style="font-weight: 700" 
+                    Text="成都信息工程大学宿舍10栋 版权"></asp:Label>
+            </div>
+            <div style="z-index: 1; left: 200px; top: 200px; position: absolute; height: 395px; width: 800px">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p style="height: 395px; background-color: #CCCCFF">
+                        <br />
+                    </p>
+                </asp:ContentPlaceHolder>
+            </div>
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/image/7.jpg" 
+                
+                style="z-index: 1; left: 0px; top: 0px; position: absolute; width: 1000px; height: 200px; background-color: #FFFFFF;" />
+        </div>
+
+
+    </form>
+</body>
+</html>
